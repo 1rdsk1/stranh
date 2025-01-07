@@ -1,0 +1,1726 @@
+execve("/usr/bin/tigervncserver", ["/usr/bin/tigervncserver", ":1", "-geometry", "1920x1000", "-depth", "24"], 0xffffe7907b98 /* 17 vars */) = 0
+brk(NULL)                               = 0xaaab0c137000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff858bb000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=81961, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 81961, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff85871000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=551064, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 680048, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff857ca000
+mmap(0xffff857d0000, 614512, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff857d0000
+munmap(0xffff857ca000, 24576)           = 0
+munmap(0xffff85867000, 36976)           = 0
+mprotect(0xffff85856000, 61440, PROT_NONE) = 0
+mmap(0xffff85865000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x85000) = 0xffff85865000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1637400, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1805928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff85617000
+mmap(0xffff85620000, 1740392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff85620000
+munmap(0xffff85617000, 36864)           = 0
+munmap(0xffff857c9000, 28264)           = 0
+mprotect(0xffff857a8000, 61440, PROT_NONE) = 0
+mmap(0xffff857b7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0xffff857b7000
+mmap(0xffff857bd000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff857bd000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\20\25\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=186296, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 348512, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff855ca000
+mmap(0xffff855d0000, 282976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff855d0000
+munmap(0xffff855ca000, 24576)           = 0
+munmap(0xffff85616000, 37216)           = 0
+mprotect(0xffff855fd000, 61440, PROT_NONE) = 0
+mmap(0xffff8560c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0xffff8560c000
+mmap(0xffff8560e000, 29024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8560e000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff858b9000
+set_tid_address(0xffff858b90f0)         = 132689
+set_robust_list(0xffff858b9100, 24)     = 0
+rseq(0xffff858b97c0, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffff857b7000, 16384, PROT_READ) = 0
+mprotect(0xffff8560c000, 4096, PROT_READ) = 0
+mprotect(0xffff85865000, 4096, PROT_READ) = 0
+mprotect(0xaaaace4b8000, 65536, PROT_READ) = 0
+mprotect(0xffff858c0000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffff85871000, 81961)           = 0
+rt_sigaction(SIGFPE, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTART}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getrandom("\x6c\x8d\x55\x55\x92\x0b\x64\x1f", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaab0c137000
+brk(0xaaab0c158000)                     = 0xaaab0c158000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+openat(AT_FDCWD, "/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+read(3, "\\\374\240\305", 4)            = 4
+close(3)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5716688, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 5716688, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff8505c000
+close(3)                                = 0
+brk(0xaaab0c179000)                     = 0xaaab0c179000
+readlinkat(AT_FDCWD, "/proc/self/exe", "/usr/bin/perl", 4095) = 13
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/5.34.0/aarch64-linux-gnu-thread-multi", 0xfffff964a128, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/5.34.0", 0xfffff964a128, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/aarch64-linux-gnu-thread-multi", 0xfffff964a128, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0/aarch64-linux-gnu-thread-multi", 0xfffff964a128, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/5.34.0", 0xfffff964a128, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/site_perl/aarch64-linux-gnu-thread-multi", 0xfffff964a128, 0) = -1 ENOENT (No such file or directory)
+fcntl(0, F_SETFD, 0)                    = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+fcntl(1, F_SETFD, 0)                    = 0
+ioctl(1, TCGETS, 0xfffff9649e80)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(1, 0, SEEK_CUR)                   = 6107
+fcntl(2, F_SETFD, 0)                    = 0
+ioctl(2, TCGETS, 0xfffff9649e80)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(2, 0, SEEK_CUR)                   = 6283
+openat(AT_FDCWD, "/usr/bin/tigervncserver", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+ioctl(3, TCGETS, 0xfffff9649fa0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=4959, ...}, AT_EMPTY_PATH) = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+read(3, "#! /usr/bin/perl\n# vim: set sw=2"..., 8192) = 4959
+newfstatat(AT_FDCWD, "/etc/perl/warnings.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/warnings.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/warnings.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/warnings.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/warnings.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/warnings.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/warnings.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/warnings.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/warnings.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/warnings.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/warnings.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/warnings.pm", {st_mode=S_IFREG|0644, st_size=27559, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/warnings.pm", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "# -*- buffer-read-only: t -*-\n# "..., 8192) = 8192
+brk(0xaaab0c19a000)                     = 0xaaab0c19a000
+read(4, "0\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x0"..., 8192) = 8192
+read(4, "8]\n    'nonchar'\t\t\t\t=> \"\\x00\\x00"..., 8192) = 8192
+brk(0xaaab0c1bb000)                     = 0xaaab0c1bb000
+read(4, " && $DB::args[0] =~ /^$category="..., 8192) = 2983
+brk(0xaaab0c1dc000)                     = 0xaaab0c1dc000
+lseek(4, 27544, SEEK_SET)               = 27544
+lseek(4, 0, SEEK_CUR)                   = 27544
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/strict.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/strict.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/strict.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/strict.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/strict.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/strict.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/strict.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/strict.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/strict.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/strict.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/strict.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/strict.pm", {st_mode=S_IFREG|0644, st_size=1606, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/strict.pm", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "package strict;\n\n$strict::VERSIO"..., 8192) = 1606
+lseek(4, 1605, SEEK_SET)                = 1605
+lseek(4, 0, SEEK_CUR)                   = 1605
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/Common.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/Common.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/Common.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/Common.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/Common.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/Common.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/Common.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/Common.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Common.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Common.pm", {st_mode=S_IFREG|0644, st_size=6000, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Common.pm", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "package TigerVNC::Common;\n\n# Bel"..., 8192) = 6000
+newfstatat(AT_FDCWD, "/etc/perl/File/Spec.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/File/Spec.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Spec.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Spec.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Spec.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Spec.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Spec.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Spec.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Spec.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Spec.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Spec.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Spec.pm", {st_mode=S_IFREG|0644, st_size=556, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Spec.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package File::Spec;\n\nuse strict;"..., 8192) = 556
+lseek(5, 555, SEEK_SET)                 = 555
+lseek(5, 0, SEEK_CUR)                   = 555
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/File/Spec/Unix.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/File/Spec/Unix.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Spec/Unix.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Spec/Unix.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Spec/Unix.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Spec/Unix.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Spec/Unix.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Spec/Unix.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Spec/Unix.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Spec/Unix.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Spec/Unix.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Spec/Unix.pm", {st_mode=S_IFREG|0644, st_size=9299, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Spec/Unix.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package File::Spec::Unix;\n\nuse s"..., 8192) = 8192
+newfstatat(AT_FDCWD, "/etc/perl/Cwd.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Cwd.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Cwd.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Cwd.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Cwd.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Cwd.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Cwd.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Cwd.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Cwd.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Cwd.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Cwd.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Cwd.pm", {st_mode=S_IFREG|0644, st_size=17657, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Cwd.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package Cwd;\nuse strict;\nuse Exp"..., 8192) = 8192
+newfstatat(AT_FDCWD, "/etc/perl/Exporter.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Exporter.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Exporter.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Exporter.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Exporter.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Exporter.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Exporter.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Exporter.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Exporter.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Exporter.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Exporter.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Exporter.pm", {st_mode=S_IFREG|0644, st_size=2336, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Exporter.pm", O_RDONLY|O_CLOEXEC) = 7
+ioctl(7, TCGETS, 0xfffff9647f00)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(7, 0, SEEK_CUR)                   = 0
+read(7, "package Exporter;\n\nuse strict;\nn"..., 8192) = 2336
+brk(0xaaab0c1fd000)                     = 0xaaab0c1fd000
+lseek(7, 2335, SEEK_SET)                = 2335
+lseek(7, 0, SEEK_CUR)                   = 2335
+close(7)                                = 0
+brk(0xaaab0c21e000)                     = 0xaaab0c21e000
+read(6, "rted.\n    $path =~ /^(.*)\\z/s\t\t#"..., 8192) = 8192
+brk(0xaaab0c240000)                     = 0xaaab0c240000
+read(6, "ub _qnx_cwd {\n\tlocal $ENV{PATH} "..., 8192) = 1273
+lseek(6, 17656, SEEK_SET)               = 17656
+lseek(6, 0, SEEK_CUR)                   = 17656
+close(6)                                = 0
+brk(0xaaab0c262000)                     = 0xaaab0c262000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/XSLoader.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/XSLoader.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/XSLoader.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/XSLoader.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/XSLoader.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/XSLoader.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/XSLoader.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/XSLoader.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/XSLoader.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/XSLoader.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/XSLoader.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/XSLoader.pm", {st_mode=S_IFREG|0644, st_size=3967, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/XSLoader.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "# Generated from XSLoader_pm.PL "..., 8192) = 3967
+lseek(6, 3966, SEEK_SET)                = 3966
+lseek(6, 0, SEEK_CUR)                   = 3966
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Cwd/Cwd.so", {st_mode=S_IFREG|0644, st_size=18760, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Cwd/Cwd.bs", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Cwd/Cwd.so", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=18760, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 147792, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff85037000
+mmap(0xffff85040000, 82256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0) = 0xffff85040000
+munmap(0xffff85037000, 36864)           = 0
+munmap(0xffff85055000, 24912)           = 0
+mprotect(0xffff85043000, 65536, PROT_NONE) = 0
+mmap(0xffff85053000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x3000) = 0xffff85053000
+close(6)                                = 0
+mprotect(0xffff85053000, 4096, PROT_READ) = 0
+newfstatat(AT_FDCWD, "/bin/pwd", {st_mode=S_IFREG|0755, st_size=26984, ...}, 0) = 0
+geteuid()                               = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+getgroups(0, NULL)                      = 8
+getgroups(8, [4, 24, 27, 30, 46, 123, 135, 1000]) = 8
+newfstatat(AT_FDCWD, "/etc/perl/constant.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/constant.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/constant.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/constant.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/constant.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/constant.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/constant.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/constant.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/constant.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/constant.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/constant.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/constant.pm", {st_mode=S_IFREG|0644, st_size=5737, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/constant.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package constant;\nuse 5.008;\nuse"..., 8192) = 5737
+newfstatat(AT_FDCWD, "/etc/perl/warnings/register.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/warnings/register.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/warnings/register.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/warnings/register.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/warnings/register.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/warnings/register.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/warnings/register.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/warnings/register.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/warnings/register.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/warnings/register.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/warnings/register.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/warnings/register.pm", {st_mode=S_IFREG|0644, st_size=488, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/warnings/register.pm", O_RDONLY|O_CLOEXEC) = 7
+ioctl(7, TCGETS, 0xfffff9647f00)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(7, 0, SEEK_CUR)                   = 0
+read(7, "package warnings::register;\n\nour"..., 8192) = 488
+lseek(7, 487, SEEK_SET)                 = 487
+lseek(7, 0, SEEK_CUR)                   = 487
+close(7)                                = 0
+brk(0xaaab0c283000)                     = 0xaaab0c283000
+brk(0xaaab0c280000)                     = 0xaaab0c280000
+lseek(6, 5736, SEEK_SET)                = 5736
+lseek(6, 0, SEEK_CUR)                   = 5736
+close(6)                                = 0
+brk(0xaaab0c2a4000)                     = 0xaaab0c2a4000
+read(5, "f->canonpath( $path ) ;\n}\n\n# Int"..., 8192) = 1107
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/File/Basename.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/File/Basename.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Basename.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Basename.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Basename.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Basename.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Basename.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Basename.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Basename.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Basename.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Basename.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Basename.pm", {st_mode=S_IFREG|0644, st_size=5429, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Basename.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package File::Basename;\n\n# File:"..., 8192) = 5429
+brk(0xaaab0c2c5000)                     = 0xaaab0c2c5000
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+lseek(4, 5515, SEEK_SET)                = 5515
+lseek(4, 0, SEEK_CUR)                   = 5515
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/usr/bin/hostname", {st_mode=S_IFREG|0755, st_size=18440, ...}, 0) = 0
+geteuid()                               = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+getgroups(0, NULL)                      = 8
+getgroups(8, [4, 24, 27, 30, 46, 123, 135, 1000]) = 8
+newfstatat(AT_FDCWD, "/usr/bin/xauth", {st_mode=S_IFREG|0755, st_size=51928, ...}, 0) = 0
+geteuid()                               = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+getgroups(0, NULL)                      = 8
+getgroups(8, [4, 24, 27, 30, 46, 123, 135, 1000]) = 8
+newfstatat(AT_FDCWD, "/usr/bin/Xtigervnc", {st_mode=S_IFREG|0755, st_size=2736264, ...}, 0) = 0
+geteuid()                               = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+getgroups(0, NULL)                      = 8
+getgroups(8, [4, 24, 27, 30, 46, 123, 135, 1000]) = 8
+newfstatat(AT_FDCWD, "/usr/bin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/sbin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/bin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/sbin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/sbin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/bin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/snap/bin/X0tigervnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/bin/tigervncpasswd", {st_mode=S_IFREG|0755, st_size=35048, ...}, 0) = 0
+geteuid()                               = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+getgroups(0, NULL)                      = 8
+getgroups(8, [4, 24, 27, 30, 46, 123, 135, 1000]) = 8
+newfstatat(AT_FDCWD, "/usr/bin/openssl", {st_mode=S_IFREG|0755, st_size=927000, ...}, 0) = 0
+geteuid()                               = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+getgroups(0, NULL)                      = 8
+getgroups(8, [4, 24, 27, 30, 46, 123, 135, 1000]) = 8
+newfstatat(AT_FDCWD, "/usr/bin/xdpyinfo", {st_mode=S_IFREG|0755, st_size=35656, ...}, 0) = 0
+geteuid()                               = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+getgroups(0, NULL)                      = 8
+getgroups(8, [4, 24, 27, 30, 46, 123, 135, 1000]) = 8
+lseek(3, 945, SEEK_SET)                 = 945
+lseek(3, 0, SEEK_CUR)                   = 945
+pipe2([4, 5], O_CLOEXEC)                = 0
+fcntl(4, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+pipe2([6, 7], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff858b90f0) = 132690
+close(7)                                = 0
+close(5)                                = 0
+read(6, "", 4)                          = 0
+close(6)                                = 0
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(4, TCGETS, 0xfffff96497d0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+newfstatat(4, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=132690, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+read(4, "rupert-desktop\n", 8192)       = 15
+read(4, "", 8192)                       = 0
+newfstatat(4, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+close(4)                                = 0
+wait4(132690, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 132690
+pipe2([4, 5], O_CLOEXEC)                = 0
+pipe2([6, 7], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff858b90f0) = 132691
+close(7)                                = 0
+close(5)                                = 0
+read(6, "", 4)                          = 0
+close(6)                                = 0
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(4, TCGETS, 0xfffff96497d0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+newfstatat(4, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(4, "rupert-desktop\n", 8192)       = 15
+read(4, "", 8192)                       = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=132691, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+newfstatat(4, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+close(4)                                = 0
+wait4(132691, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 132691
+getuid()                                = 1000
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=582, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=582, ...}, AT_EMPTY_PATH) = 0
+read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 582
+read(4, "", 4096)                       = 0
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=582, ...}, AT_EMPTY_PATH) = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2930, ...}, AT_EMPTY_PATH) = 0
+lseek(4, 0, SEEK_SET)                   = 0
+read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2930
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/sys/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/sys/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/sys/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/sys/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/sys/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/sys/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/sys/ioctl.ph", {st_mode=S_IFREG|0644, st_size=459, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/sys/ioctl.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 459
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/_h2ph_pre.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/_h2ph_pre.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/_h2ph_pre.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/_h2ph_pre.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/_h2ph_pre.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/_h2ph_pre.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/_h2ph_pre.ph", {st_mode=S_IFREG|0644, st_size=31814, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/_h2ph_pre.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "# This file was created by h2ph "..., 8192) = 8192
+brk(0xaaab0c2e6000)                     = 0xaaab0c2e6000
+brk(0xaaab0c307000)                     = 0xaaab0c307000
+brk(0xaaab0c306000)                     = 0xaaab0c306000
+read(4, " } }\n\nunless (defined &__FLT32X_"..., 8192) = 8192
+brk(0xaaab0c327000)                     = 0xaaab0c327000
+read(4, "C_LONG_LOCK_FREE) { sub __GCC_AT"..., 8192) = 8192
+brk(0xaaab0c348000)                     = 0xaaab0c348000
+read(4, " &__SHRT_MAX__) { sub __SHRT_MAX"..., 8192) = 7238
+brk(0xaaab0c36c000)                     = 0xaaab0c36c000
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/features.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/features.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/features.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/features.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/features.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/features.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/features.ph", {st_mode=S_IFREG|0644, st_size=14995, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/features.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 8192
+read(4, "SAFE)))) {\n\teval 'sub _POSIX_SOU"..., 8192) = 6803
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/features-time64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/features-time64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/features-time64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/features-time64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/features-time64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/features-time64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/features-time64.ph", {st_mode=S_IFREG|0644, st_size=811, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/features-time64.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 811
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/bits/wordsize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/bits/wordsize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/bits/wordsize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/bits/wordsize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/bits/wordsize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/bits/wordsize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/wordsize.ph", {st_mode=S_IFREG|0644, st_size=497, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/wordsize.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 497
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/bits/timesize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/bits/timesize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/bits/timesize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/bits/timesize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/bits/timesize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/bits/timesize.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/timesize.ph", {st_mode=S_IFREG|0644, st_size=120, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/timesize.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 120
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/stdc-predef.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/stdc-predef.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/stdc-predef.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/stdc-predef.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/stdc-predef.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/stdc-predef.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/stdc-predef.ph", {st_mode=S_IFREG|0644, st_size=1220, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/stdc-predef.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 1220
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/sys/cdefs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/sys/cdefs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/sys/cdefs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/sys/cdefs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/sys/cdefs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/sys/cdefs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/sys/cdefs.ph", {st_mode=S_IFREG|0644, st_size=29996, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/sys/cdefs.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 8192
+brk(0xaaab0c38e000)                     = 0xaaab0c38e000
+read(4, "defined(&__STDC_VERSION__) ? &__"..., 8192) = 8192
+read(4, "b __wur () {1;}' unless defined("..., 8192) = 8192
+brk(0xaaab0c3af000)                     = 0xaaab0c3af000
+read(4, "   eval 'sub __LDBL_REDIR2_DECL "..., 8192) = 5420
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+brk(0xaaab0c3d0000)                     = 0xaaab0c3d0000
+brk(0xaaab0c3f1000)                     = 0xaaab0c3f1000
+newfstatat(AT_FDCWD, "/etc/perl/bits/long-double.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/bits/long-double.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/bits/long-double.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/bits/long-double.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/bits/long-double.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/bits/long-double.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/long-double.ph", {st_mode=S_IFREG|0644, st_size=169, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/long-double.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 169
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/gnu/stubs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/gnu/stubs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/gnu/stubs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/gnu/stubs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/gnu/stubs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/gnu/stubs.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/gnu/stubs.ph", {st_mode=S_IFREG|0644, st_size=224, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/gnu/stubs.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 224
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/gnu/stubs-lp64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/gnu/stubs-lp64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/gnu/stubs-lp64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/gnu/stubs-lp64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/gnu/stubs-lp64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/gnu/stubs-lp64.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/gnu/stubs-lp64.ph", {st_mode=S_IFREG|0644, st_size=1070, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/gnu/stubs-lp64.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 1070
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/bits/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/bits/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/bits/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/bits/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/bits/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/bits/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/ioctls.ph", {st_mode=S_IFREG|0644, st_size=3827, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/ioctls.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 3827
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/asm/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/asm/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/asm/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/asm/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/asm/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/asm/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm/ioctls.ph", {st_mode=S_IFREG|0644, st_size=93, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm/ioctls.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 93
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/asm-generic/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/asm-generic/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/asm-generic/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/asm-generic/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/asm-generic/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/asm-generic/ioctls.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm-generic/ioctls.ph", {st_mode=S_IFREG|0644, st_size=6351, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm-generic/ioctls.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 6351
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/linux/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/linux/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/linux/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/linux/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/linux/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/linux/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/linux/ioctl.ph", {st_mode=S_IFREG|0644, st_size=196, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/linux/ioctl.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 196
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/asm/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/asm/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/asm/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/asm/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/asm/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/asm/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm/ioctl.ph", {st_mode=S_IFREG|0644, st_size=92, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm/ioctl.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 92
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/asm-generic/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/asm-generic/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/asm-generic/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/asm-generic/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/asm-generic/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/asm-generic/ioctl.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm-generic/ioctl.ph", {st_mode=S_IFREG|0644, st_size=4060, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/asm-generic/ioctl.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 4060
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/bits/ioctl-types.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/bits/ioctl-types.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/bits/ioctl-types.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/bits/ioctl-types.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/bits/ioctl-types.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/bits/ioctl-types.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/ioctl-types.ph", {st_mode=S_IFREG|0644, st_size=1764, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/bits/ioctl-types.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 1764
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/sys/ttydefaults.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/sys/ttydefaults.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/sys/ttydefaults.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/sys/ttydefaults.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/sys/ttydefaults.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/sys/ttydefaults.ph", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/sys/ttydefaults.ph", {st_mode=S_IFREG|0644, st_size=2509, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/sys/ttydefaults.ph", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "require '_h2ph_pre.ph';\n\nno warn"..., 8192) = 2509
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/dev/tty", O_RDWR|O_CLOEXEC) = 4
+ioctl(4, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(4, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+newfstatat(4, "", {st_mode=S_IFCHR|0666, st_rdev=makedev(0x5, 0), ...}, AT_EMPTY_PATH) = 0
+ioctl(4, TIOCGWINSZ, {ws_row=51, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/Exporter/Heavy.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Exporter/Heavy.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Exporter/Heavy.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Exporter/Heavy.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Exporter/Heavy.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Exporter/Heavy.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Exporter/Heavy.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Exporter/Heavy.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Exporter/Heavy.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Exporter/Heavy.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Exporter/Heavy.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Exporter/Heavy.pm", {st_mode=S_IFREG|0644, st_size=6385, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Exporter/Heavy.pm", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "package Exporter::Heavy;\n\nuse st"..., 8192) = 6385
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+read(3, "use TigerVNC::Config;\nuse TigerV"..., 8192) = 4014
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/Config.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/Config.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/Config.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/Config.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/Config.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/Config.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/Config.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/Config.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Config.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Config.pm", {st_mode=S_IFREG|0644, st_size=49634, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Config.pm", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "package TigerVNC::Config;\n\n# Bel"..., 8192) = 8192
+newfstatat(AT_FDCWD, "/etc/perl/File/Path.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/File/Path.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Path.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Path.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Path.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Path.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Path.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Path.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Path.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Path.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Path.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Path.pm", {st_mode=S_IFREG|0644, st_size=20724, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Path.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package File::Path;\n\nuse 5.005_0"..., 8192) = 8192
+newfstatat(AT_FDCWD, "/etc/perl/vars.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/vars.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/vars.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/vars.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/vars.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/vars.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/vars.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/vars.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/vars.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/vars.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/vars.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/vars.pm", {st_mode=S_IFREG|0644, st_size=1148, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/vars.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package vars;\n\nuse 5.006;\n\nour $"..., 8192) = 1148
+lseek(6, 1147, SEEK_SET)                = 1147
+lseek(6, 0, SEEK_CUR)                   = 1147
+close(6)                                = 0
+brk(0xaaab0c412000)                     = 0xaaab0c412000
+read(5, "d\n    return 0 if @t < @d;\n\n    "..., 8192) = 8192
+brk(0xaaab0c433000)                     = 0xaaab0c433000
+read(5, "$nperm != $perm and not chmod( $"..., 8192) = 4340
+lseek(5, 20723, SEEK_SET)               = 20723
+lseek(5, 0, SEEK_CUR)                   = 20723
+close(5)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/OptionTie.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/OptionTie.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/OptionTie.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/OptionTie.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/OptionTie.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/OptionTie.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/OptionTie.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/OptionTie.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/OptionTie.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/OptionTie.pm", {st_mode=S_IFREG|0644, st_size=2029, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl5/TigerVNC/OptionTie.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package TigerVNC::OptionTie;\n\n# "..., 8192) = 2029
+newfstatat(AT_FDCWD, "/etc/perl/Carp.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Carp.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Carp.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Carp.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Carp.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Carp.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Carp.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Carp.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Carp.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Carp.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Carp.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Carp.pm", {st_mode=S_IFREG|0644, st_size=25398, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Carp.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package Carp;\n\n{ use 5.006; }\nus"..., 8192) = 8192
+brk(0xaaab0c454000)                     = 0xaaab0c454000
+newfstatat(AT_FDCWD, "/etc/perl/overloading.pmc", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/overloading.pm", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/overloading.pmc", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/overloading.pm", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/overloading.pmc", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/overloading.pm", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/overloading.pmc", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/overloading.pm", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/overloading.pmc", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/overloading.pm", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/overloading.pmc", 0xfffff96481d8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/overloading.pm", {st_mode=S_IFREG|0644, st_size=964, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/overloading.pm", O_RDONLY|O_CLOEXEC) = 7
+ioctl(7, TCGETS, 0xfffff9647f50)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(7, 0, SEEK_CUR)                   = 0
+read(7, "package overloading;\nuse warning"..., 8192) = 964
+lseek(7, 963, SEEK_SET)                 = 963
+lseek(7, 0, SEEK_CUR)                   = 963
+close(7)                                = 0
+read(6, "; # allow caller to format refer"..., 8192) = 8192
+brk(0xaaab0c475000)                     = 0xaaab0c475000
+read(6, " to all\n        # Perl versions "..., 8192) = 8192
+brk(0xaaab0c496000)                     = 0xaaab0c496000
+read(6, "polluting the caller's namespace"..., 8192) = 822
+lseek(6, 25397, SEEK_SET)               = 25397
+lseek(6, 0, SEEK_CUR)                   = 25397
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+lseek(5, 1563, SEEK_SET)                = 1563
+lseek(5, 0, SEEK_CUR)                   = 1563
+close(5)                                = 0
+brk(0xaaab0c4b7000)                     = 0xaaab0c4b7000
+read(4, "e\n  # 2  => Config file paramete"..., 8192) = 8192
+brk(0xaaab0c4db000)                     = 0xaaab0c4db000
+read(4, "      [51, 'HostsFile=s'       ="..., 8192) = 8192
+brk(0xaaab0c4fd000)                     = 0xaaab0c4fd000
+read(4, "            print STDERR \"$PROG:"..., 8192) = 8192
+brk(0xaaab0c520000)                     = 0xaaab0c520000
+read(4, "sessions/$name.desktop\";\n\n  if ("..., 8192) = 8192
+brk(0xaaab0c541000)                     = 0xaaab0c541000
+brk(0xaaab0c562000)                     = 0xaaab0c562000
+read(4, "     };\n      }\n    }\n  }\n\n  my "..., 8192) = 8192
+brk(0xaaab0c587000)                     = 0xaaab0c587000
+read(4, ";\n}\n\n1;\n__END__\n\n# -- documentat"..., 8192) = 482
+lseek(4, 49168, SEEK_SET)               = 49168
+lseek(4, 0, SEEK_CUR)                   = 49168
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/Wrapper.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/TigerVNC/Wrapper.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/Wrapper.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/TigerVNC/Wrapper.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/Wrapper.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/TigerVNC/Wrapper.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/Wrapper.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/TigerVNC/Wrapper.pm", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Wrapper.pmc", 0xfffff96499b8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Wrapper.pm", {st_mode=S_IFREG|0644, st_size=44995, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl5/TigerVNC/Wrapper.pm", O_RDONLY|O_CLOEXEC) = 4
+ioctl(4, TCGETS, 0xfffff9649730)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 0
+read(4, "package TigerVNC::Wrapper;\n\n# Be"..., 8192) = 8192
+newfstatat(AT_FDCWD, "/etc/perl/File/ReadBackwards.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/File/ReadBackwards.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/ReadBackwards.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/ReadBackwards.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/ReadBackwards.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/ReadBackwards.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/ReadBackwards.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/ReadBackwards.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/ReadBackwards.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/ReadBackwards.pm", {st_mode=S_IFREG|0644, st_size=10164, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl5/File/ReadBackwards.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "# File::ReadBackwards.pm\n\n# Copy"..., 8192) = 8192
+newfstatat(AT_FDCWD, "/etc/perl/Symbol.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Symbol.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Symbol.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Symbol.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Symbol.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Symbol.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Symbol.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Symbol.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Symbol.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Symbol.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Symbol.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Symbol.pm", {st_mode=S_IFREG|0644, st_size=2205, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Symbol.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package Symbol;\n\nuse strict;\nuse"..., 8192) = 2205
+read(6, "", 8192)                       = 0
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/Fcntl.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Fcntl.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Fcntl.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Fcntl.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Fcntl.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Fcntl.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Fcntl.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Fcntl.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Fcntl.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Fcntl.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Fcntl.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Fcntl.pm", {st_mode=S_IFREG|0644, st_size=2156, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Fcntl.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package Fcntl;\n\nuse strict;\nour("..., 8192) = 2156
+read(6, "", 8192)                       = 0
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Fcntl/Fcntl.so", {st_mode=S_IFREG|0644, st_size=18568, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Fcntl/Fcntl.bs", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Fcntl/Fcntl.so", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=18568, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 147688, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8501b000
+mmap(0xffff85020000, 82152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0) = 0xffff85020000
+munmap(0xffff8501b000, 20480)           = 0
+munmap(0xffff85035000, 41192)           = 0
+mprotect(0xffff85023000, 65536, PROT_NONE) = 0
+mmap(0xffff85033000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x3000) = 0xffff85033000
+close(6)                                = 0
+mprotect(0xffff85033000, 4096, PROT_READ) = 0
+brk(0xaaab0c5a9000)                     = 0xaaab0c5a9000
+lseek(5, 4635, SEEK_SET)                = 4635
+lseek(5, 0, SEEK_CUR)                   = 4635
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/File/stat.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/stat.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/stat.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/stat.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/stat.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/stat.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/File/stat.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl/5.34/File/stat.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl/5.34/File/stat.pm", {st_mode=S_IFREG|0644, st_size=10302, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl/5.34/File/stat.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package File::stat;\nuse 5.006;\n\n"..., 8192) = 8192
+brk(0xaaab0c5ca000)                     = 0xaaab0c5ca000
+newfstatat(AT_FDCWD, "/etc/perl/overload.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/overload.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/overload.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/overload.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/overload.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/overload.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/overload.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/overload.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/overload.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/overload.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/overload.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/overload.pm", {st_mode=S_IFREG|0644, st_size=4488, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/overload.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package overload;\n\nuse strict;\nn"..., 8192) = 4488
+brk(0xaaab0c5eb000)                     = 0xaaab0c5eb000
+lseek(6, 4487, SEEK_SET)                = 4487
+lseek(6, 0, SEEK_CUR)                   = 4487
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Class/Struct.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Class/Struct.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Class/Struct.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Class/Struct.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Class/Struct.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Class/Struct.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/Class/Struct.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl/5.34/Class/Struct.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl/5.34/Class/Struct.pm", {st_mode=S_IFREG|0644, st_size=20319, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl/5.34/Class/Struct.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package Class::Struct;\n\n## See P"..., 8192) = 8192
+brk(0xaaab0c60c000)                     = 0xaaab0c60c000
+lseek(6, 6766, SEEK_SET)                = 6766
+lseek(6, 0, SEEK_CUR)                   = 6766
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+lseek(5, 6414, SEEK_SET)                = 6414
+lseek(5, 0, SEEK_CUR)                   = 6414
+close(5)                                = 0
+brk(0xaaab0c62d000)                     = 0xaaab0c62d000
+newfstatat(AT_FDCWD, "/etc/perl/File/Temp.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/File/Temp.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Temp.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/File/Temp.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Temp.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/File/Temp.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Temp.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/File/Temp.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Temp.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/File/Temp.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Temp.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Temp.pm", {st_mode=S_IFREG|0644, st_size=85190, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/File/Temp.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package File::Temp; # git descri"..., 8192) = 8192
+newfstatat(AT_FDCWD, "/etc/perl/IO/Seekable.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/IO/Seekable.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO/Seekable.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO/Seekable.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO/Seekable.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO/Seekable.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO/Seekable.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO/Seekable.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO/Seekable.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO/Seekable.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/Seekable.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/Seekable.pm", {st_mode=S_IFREG|0644, st_size=642, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/Seekable.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "#\n\npackage IO::Seekable;\n\nuse 5."..., 8192) = 642
+newfstatat(AT_FDCWD, "/etc/perl/IO/Handle.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/IO/Handle.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO/Handle.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO/Handle.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO/Handle.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO/Handle.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO/Handle.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO/Handle.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO/Handle.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO/Handle.pm", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/Handle.pmc", 0xfffff9648188, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/Handle.pm", {st_mode=S_IFREG|0644, st_size=7700, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/Handle.pm", O_RDONLY|O_CLOEXEC) = 7
+ioctl(7, TCGETS, 0xfffff9647f00)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(7, 0, SEEK_CUR)                   = 0
+read(7, "package IO::Handle;\n\nuse 5.008_0"..., 8192) = 7700
+newfstatat(AT_FDCWD, "/etc/perl/SelectSaver.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/SelectSaver.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/SelectSaver.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/SelectSaver.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/SelectSaver.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/SelectSaver.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/SelectSaver.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/SelectSaver.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/SelectSaver.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/SelectSaver.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/SelectSaver.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/SelectSaver.pm", {st_mode=S_IFREG|0644, st_size=344, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/SelectSaver.pm", O_RDONLY|O_CLOEXEC) = 8
+ioctl(8, TCGETS, 0xfffff96476f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(8, 0, SEEK_CUR)                   = 0
+read(8, "package SelectSaver;\n\nour $VERSI"..., 8192) = 344
+read(8, "", 8192)                       = 0
+close(8)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/IO.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/IO.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO.pm", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO.pmc", 0xfffff9647978, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO.pm", {st_mode=S_IFREG|0644, st_size=469, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO.pm", O_RDONLY|O_CLOEXEC) = 8
+ioctl(8, TCGETS, 0xfffff96476f0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(8, 0, SEEK_CUR)                   = 0
+read(8, "#\n\npackage IO;\n\nuse XSLoader ();"..., 8192) = 469
+brk(0xaaab0c64f000)                     = 0xaaab0c64f000
+lseek(8, 468, SEEK_SET)                 = 468
+lseek(8, 0, SEEK_CUR)                   = 468
+close(8)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/IO/IO.so", {st_mode=S_IFREG|0644, st_size=18824, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/IO/IO.bs", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/IO/IO.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=18824, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 147864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84ffb000
+mmap(0xffff85000000, 82328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffff85000000
+munmap(0xffff84ffb000, 20480)           = 0
+munmap(0xffff85015000, 41368)           = 0
+mprotect(0xffff85004000, 61440, PROT_NONE) = 0
+mmap(0xffff85013000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x3000) = 0xffff85013000
+close(8)                                = 0
+mprotect(0xffff85013000, 4096, PROT_READ) = 0
+brk(0xaaab0c670000)                     = 0xaaab0c670000
+read(7, "", 8192)                       = 0
+close(7)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+read(6, "", 8192)                       = 0
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/Errno.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Errno.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Errno.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Errno.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Errno.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Errno.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Errno.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Errno.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Errno.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Errno.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Errno.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Errno.pm", {st_mode=S_IFREG|0644, st_size=4931, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Errno.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "# -*- buffer-read-only: t -*-\n#\n"..., 8192) = 4931
+brk(0xaaab0c691000)                     = 0xaaab0c691000
+lseek(6, 4916, SEEK_SET)                = 4916
+lseek(6, 0, SEEK_CUR)                   = 4916
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/Scalar/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Scalar/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Scalar/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Scalar/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Scalar/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Scalar/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Scalar/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Scalar/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Scalar/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Scalar/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Scalar/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Scalar/Util.pm", {st_mode=S_IFREG|0644, st_size=1414, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Scalar/Util.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "# Copyright (c) 1997-2007 Graham"..., 8192) = 1414
+lseek(6, 1413, SEEK_SET)                = 1413
+lseek(6, 0, SEEK_CUR)                   = 1413
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/List/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/List/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/List/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/List/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/List/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/List/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/List/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/List/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/List/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/List/Util.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/List/Util.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/List/Util.pm", {st_mode=S_IFREG|0644, st_size=1211, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/List/Util.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "# Copyright (c) 1997-2009 Graham"..., 8192) = 1211
+read(6, "", 8192)                       = 0
+close(6)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/List/Util/Util.so", {st_mode=S_IFREG|0644, st_size=51936, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/List/Util/Util.bs", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/List/Util/Util.so", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=51936, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 181040, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84fd3000
+mmap(0xffff84fe0000, 115504, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0) = 0xffff84fe0000
+munmap(0xffff84fd3000, 53248)           = 0
+munmap(0xffff84ffd000, 9008)            = 0
+mprotect(0xffff84fec000, 61440, PROT_NONE) = 0
+mmap(0xffff84ffb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0xb000) = 0xffff84ffb000
+close(6)                                = 0
+mprotect(0xffff84ffb000, 4096, PROT_READ) = 0
+newfstatat(AT_FDCWD, "/etc/perl/parent.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/parent.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/parent.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/parent.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/parent.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/parent.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/parent.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/parent.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/parent.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/parent.pm", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/parent.pmc", 0xfffff9648998, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/parent.pm", {st_mode=S_IFREG|0644, st_size=460, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/parent.pm", O_RDONLY|O_CLOEXEC) = 6
+ioctl(6, TCGETS, 0xfffff9648710)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = 0
+read(6, "package parent;\nuse strict;\n\nour"..., 8192) = 460
+lseek(6, 459, SEEK_SET)                 = 459
+lseek(6, 0, SEEK_CUR)                   = 459
+close(6)                                = 0
+read(5, "n be used to tell the OS\n# to au"..., 8192) = 8192
+brk(0xaaab0c6b2000)                     = 0xaaab0c6b2000
+read(5, "m;\n      }\n\n      # Try to make "..., 8192) = 8192
+brk(0xaaab0c6d3000)                     = 0xaaab0c6d3000
+read(5, "ile\n  my ($volume, $directories,"..., 8192) = 8192
+read(5, "e for interacting with\n#pod C<Fi"..., 8192) = 8192
+brk(0xaaab0c6f4000)                     = 0xaaab0c6f4000
+read(5, "ed with random letters to\n#pod g"..., 8192) = 8192
+read(5, "k the file. It is up to unlink0 "..., 8192) = 8192
+brk(0xaaab0c716000)                     = 0xaaab0c716000
+read(5, "                   \"open\" => 1,\n"..., 8192) = 8192
+read(5, "red).\n#pod Then the filename is "..., 8192) = 8192
+brk(0xaaab0c737000)                     = 0xaaab0c737000
+read(5, " happens automatically.)\n#pod\n#p"..., 8192) = 8192
+read(5, "e up if they exceed the number o"..., 8192) = 3270
+lseek(5, 85189, SEEK_SET)               = 85189
+lseek(5, 0, SEEK_CUR)                   = 85189
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/Carp/Heavy.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Carp/Heavy.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Carp/Heavy.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Carp/Heavy.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Carp/Heavy.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Carp/Heavy.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Carp/Heavy.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Carp/Heavy.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Carp/Heavy.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Carp/Heavy.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Carp/Heavy.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Carp/Heavy.pm", {st_mode=S_IFREG|0644, st_size=773, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Carp/Heavy.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package Carp::Heavy;\n\nuse Carp ("..., 8192) = 773
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/DirHandle.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/DirHandle.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/DirHandle.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/DirHandle.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/DirHandle.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/DirHandle.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/DirHandle.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl/5.34/DirHandle.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl/5.34/DirHandle.pm", {st_mode=S_IFREG|0644, st_size=2085, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/share/perl/5.34/DirHandle.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package DirHandle;\n\nour $VERSION"..., 8192) = 2085
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/etc/perl/IO/File.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/IO/File.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO/File.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/IO/File.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO/File.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/IO/File.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO/File.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/IO/File.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO/File.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/IO/File.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/File.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/File.pm", {st_mode=S_IFREG|0644, st_size=1636, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/IO/File.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "#\n\npackage IO::File;\n\nuse 5.008_"..., 8192) = 1636
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/etc/perl/Socket.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Socket.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Socket.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Socket.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Socket.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Socket.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Socket.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Socket.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Socket.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Socket.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Socket.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Socket.pm", {st_mode=S_IFREG|0644, st_size=13828, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Socket.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package Socket;\n\nuse strict;\n{ u"..., 8192) = 8192
+brk(0xaaab0c758000)                     = 0xaaab0c758000
+read(5, "type\",\n    );\n}\n\n# The following"..., 8192) = 5636
+brk(0xaaab0c779000)                     = 0xaaab0c779000
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Socket/Socket.so", {st_mode=S_IFREG|0644, st_size=43496, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Socket/Socket.bs", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/Socket/Socket.so", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=43496, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 172456, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84fb5000
+mmap(0xffff84fc0000, 106920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0xffff84fc0000
+munmap(0xffff84fb5000, 45056)           = 0
+munmap(0xffff84fdb000, 16808)           = 0
+mprotect(0xffff84fc9000, 61440, PROT_NONE) = 0
+mmap(0xffff84fd8000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x8000) = 0xffff84fd8000
+close(5)                                = 0
+mprotect(0xffff84fd8000, 8192, PROT_READ) = 0
+brk(0xaaab0c79a000)                     = 0xaaab0c79a000
+newfstatat(AT_FDCWD, "/etc/perl/Time/HiRes.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Time/HiRes.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Time/HiRes.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Time/HiRes.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Time/HiRes.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Time/HiRes.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Time/HiRes.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Time/HiRes.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Time/HiRes.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Time/HiRes.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Time/HiRes.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Time/HiRes.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/Time/HiRes.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/Time/HiRes.pm", {st_mode=S_IFREG|0644, st_size=25689, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/Time/HiRes.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package Time::HiRes;\n\n{ use 5.00"..., 8192) = 8192
+lseek(5, 3424, SEEK_SET)                = 3424
+lseek(5, 0, SEEK_CUR)                   = 3424
+close(5)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/auto/Time/HiRes/HiRes.so", {st_mode=S_IFREG|0644, st_size=26992, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/auto/Time/HiRes/HiRes.bs", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl/5.34/auto/Time/HiRes/HiRes.so", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=26992, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 156032, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84f99000
+mmap(0xffff84fa0000, 90496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0xffff84fa0000
+munmap(0xffff84f99000, 28672)           = 0
+munmap(0xffff84fb7000, 33152)           = 0
+mprotect(0xffff84fa6000, 61440, PROT_NONE) = 0
+mmap(0xffff84fb5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x5000) = 0xffff84fb5000
+close(5)                                = 0
+mprotect(0xffff84fb5000, 4096, PROT_READ) = 0
+newfstatat(AT_FDCWD, "/etc/perl/POSIX.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/POSIX.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/POSIX.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/POSIX.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/POSIX.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/POSIX.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/POSIX.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/POSIX.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/POSIX.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/POSIX.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/POSIX.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/POSIX.pm", {st_mode=S_IFREG|0644, st_size=20384, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/POSIX.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package POSIX;\nuse strict;\nuse w"..., 8192) = 8192
+brk(0xaaab0c7bc000)                     = 0xaaab0c7bc000
+brk(0xaaab0c7b6000)                     = 0xaaab0c7b6000
+read(5, " {\n    usage \"printf(pattern, ar"..., 8192) = 8192
+brk(0xaaab0c7d7000)                     = 0xaaab0c7d7000
+read(5, "RIO_PGRP PRIO_USER)],\n\n    sys_s"..., 8192) = 4000
+brk(0xaaab0c803000)                     = 0xaaab0c803000
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/POSIX/POSIX.so", {st_mode=S_IFREG|0644, st_size=110160, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/POSIX/POSIX.bs", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/auto/POSIX/POSIX.so", O_RDONLY|O_CLOEXEC) = 5
+read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=110160, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 239120, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84f65000
+mmap(0xffff84f70000, 173584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0) = 0xffff84f70000
+munmap(0xffff84f65000, 45056)           = 0
+munmap(0xffff84f9b000, 17936)           = 0
+mprotect(0xffff84f87000, 65536, PROT_NONE) = 0
+mmap(0xffff84f97000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x17000) = 0xffff84f97000
+close(5)                                = 0
+mprotect(0xffff84f97000, 12288, PROT_READ) = 0
+brk(0xaaab0c824000)                     = 0xaaab0c824000
+newfstatat(AT_FDCWD, "/etc/perl/Tie/Hash.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/etc/perl/Tie/Hash.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Tie/Hash.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/lib/aarch64-linux-gnu/perl/5.34.0/Tie/Hash.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Tie/Hash.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/local/share/perl/5.34.0/Tie/Hash.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Tie/Hash.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl5/5.34/Tie/Hash.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Tie/Hash.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/share/perl5/Tie/Hash.pm", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Tie/Hash.pmc", 0xfffff96491a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Tie/Hash.pm", {st_mode=S_IFREG|0644, st_size=2037, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/perl-base/Tie/Hash.pm", O_RDONLY|O_CLOEXEC) = 5
+ioctl(5, TCGETS, 0xfffff9648f20)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = 0
+read(5, "package Tie::Hash;\n\nour $VERSION"..., 8192) = 2037
+read(5, "", 8192)                       = 0
+close(5)                                = 0
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+brk(0xaaab0c845000)                     = 0xaaab0c845000
+brk(0xaaab0c866000)                     = 0xaaab0c866000
+read(4, "      } else {\n          print \""..., 8192) = 8192
+brk(0xaaab0c888000)                     = 0xaaab0c888000
+brk(0xaaab0c8aa000)                     = 0xaaab0c8aa000
+read(4, "0;\n        }\n        if ($i >= 0"..., 8192) = 8192
+brk(0xaaab0c8cb000)                     = 0xaaab0c8cb000
+read(4, "vncAuthEnabled'}) {\n    delete $"..., 8192) = 8192
+brk(0xaaab0c8ec000)                     = 0xaaab0c8ec000
+read(4, "    $options->{'uniqueID'} => {\n"..., 8192) = 8192
+brk(0xaaab0c90f000)                     = 0xaaab0c90f000
+read(4, "nt STDERR \"\\n${header}\\n\";\n     "..., 8192) = 4035
+lseek(4, 44096, SEEK_SET)               = 44096
+lseek(4, 0, SEEK_CUR)                   = 44096
+close(4)                                = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/etc/tigervnc/vncserver-config-defaults", {st_mode=S_IFREG|0644, st_size=10368, ...}, 0) = 0
+brk(0xaaab0c930000)                     = 0xaaab0c930000
+newfstatat(AT_FDCWD, "/etc/tigervnc/vncserver-config-defaults", {st_mode=S_IFREG|0644, st_size=10368, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/tigervnc/vncserver-config-defaults", O_RDONLY|O_CLOEXEC) = 3
+ioctl(3, TCGETS, 0xfffff9649f00)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+brk(0xaaab0c951000)                     = 0xaaab0c951000
+read(3, "# /etc/tigervnc/vncserver-config"..., 8192) = 8192
+read(3, " full screen is shown to\n#      "..., 8192) = 2176
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+brk(0xaaab0c94e000)                     = 0xaaab0c94e000
+newfstatat(AT_FDCWD, "/home/rupert/.vnc", {st_mode=S_IFDIR|0700, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/tigervnc.conf", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/vnc.conf", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/config", {st_mode=S_IFREG|0700, st_size=21, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/config", {st_mode=S_IFREG|0700, st_size=21, ...}, 0) = 0
+openat(AT_FDCWD, "/home/rupert/.vnc/config", O_RDONLY|O_CLOEXEC) = 3
+ioctl(3, TCGETS, 0xfffff964a020)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0700, st_size=21, ...}, AT_EMPTY_PATH) = 0
+read(3, "securitytypes=tlsvnc\n", 8192) = 21
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/Xtigervnc-session", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/Xvnc-session", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/xstartup", {st_mode=S_IFREG|0700, st_size=597, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/tigervnc/vncserver-config-mandatory", {st_mode=S_IFREG|0644, st_size=2189, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/tigervnc/vncserver-config-mandatory", {st_mode=S_IFREG|0644, st_size=2189, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/tigervnc/vncserver-config-mandatory", O_RDONLY|O_CLOEXEC) = 3
+ioctl(3, TCGETS, 0xfffff9649f00)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "# /etc/tigervnc/vncserver-config"..., 8192) = 2189
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/etc/pam.d/vnc", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/home/rupert/.vnc", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0700, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0xaaab0c971000)                     = 0xaaab0c971000
+getdents64(3, 0xaaab0c948610 /* 8 entries */, 32768) = 272
+getdents64(3, 0xaaab0c948610 /* 0 entries */, 32768) = 0
+brk(0xaaab0c969000)                     = 0xaaab0c969000
+close(3)                                = 0
+socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(3, TCGETS, 0xfffff964a130)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(3, TCGETS, 0xfffff964a130)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+bind(3, {sa_family=AF_INET, sin_port=htons(6001), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(3, TCGETS, 0xfffff964a130)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(3, TCGETS, 0xfffff964a130)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+connect(3, {sa_family=AF_UNIX, sun_path="/tmp/.X11-unix/X1"}, 110) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/tmp/.X11-unix/X1", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/tmp/.X1-lock", 0xaaab0c1374a8, 0) = -1 ENOENT (No such file or directory)
+socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(3, TCGETS, 0xfffff964a130)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(3, TCGETS, 0xfffff964a130)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+bind(3, {sa_family=AF_INET, sin_port=htons(5901), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/home/rupert/.vnc/passwd", {st_mode=S_IFREG|0700, st_size=8, ...}, 0) = 0
+pipe2([3, 4], O_CLOEXEC)                = 0
+pipe2([5, 6], O_CLOEXEC)                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff858b90f0) = 132692
+close(6)                                = 0
+close(4)                                = 0
+read(5, "", 4)                          = 0
+close(5)                                = 0
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(3, TCGETS, 0xfffff9649fa0)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+newfstatat(3, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(3, "c7a7723a54dca80032d4a6ce5fc73cd4"..., 8192) = 33
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=132692, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+read(3, "", 8192)                       = 0
+newfstatat(3, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+wait4(132692, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 132692
+pipe2([3, 4], O_CLOEXEC)                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff858b90f0) = 132693
+close(4)                                = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(132693, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 132693
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=132693, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+read(3, "", 4)                          = 0
+close(3)                                = 0
+pipe2([3, 4], O_CLOEXEC)                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff858b90f0) = 132698
+close(4)                                = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+wait4(132698, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 132698
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=132698, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+read(3, "", 4)                          = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/home/rupert/.vnc/rupert-desktop:5901.pid", O_WRONLY|O_CREAT|O_TRUNC|O_CLOEXEC, 0666) = 3
+ioctl(3, TCGETS, 0xfffff964a020)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0664, st_size=0, ...}, AT_EMPTY_PATH) = 0
+openat(AT_FDCWD, "/home/rupert/.vnc/rupert-desktop:5901.log", O_RDWR|O_CREAT|O_APPEND|O_CLOEXEC, 0666) = 4
+lseek(4, 0, SEEK_END)                   = 105237
+ioctl(4, TCGETS, 0xfffff964a020)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(4, 0, SEEK_CUR)                   = 105237
+newfstatat(4, "", {st_mode=S_IFREG|0700, st_size=105237, ...}, AT_EMPTY_PATH) = 0
+lseek(4, 0, SEEK_END)                   = 105237
+lseek(4, 0, SEEK_CUR)                   = 105237
+rt_sigprocmask(SIG_BLOCK, [TERM], [], 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP], [], 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+pipe2([5, 6], O_CLOEXEC)                = 0
+fcntl(5, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(5, TCGETS, 0xfffff964a120)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(5, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+fcntl(6, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(6, TCGETS, 0xfffff964a120)        = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(6, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+fcntl(5, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(6, F_SETFD, FD_CLOEXEC)           = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff858b90f0) = 132700
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+close(6)                                = 0
+read(5, 
+New Xtigervnc server 'rupert-desktop:1 (rupert)' on port 5901 for display :1.
+Use xtigervncviewer -SecurityTypes tlsvnc -passwd /home/rupert/.vnc/passwd rupert-desktop:1 to connect to the VNC server.
+
+"OK!", 3)                       = 3
+close(4)                                = 0
+close(3)                                = 0
+rt_sigaction(SIGHUP, NULL, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_IGN, sa_mask=[FPE], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaace226700, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getpid()                                = 132689
+getpid()                                = 132689
+getpid()                                = 132689
+getpid()                                = 132689
+close(5)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
